@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Triplebyte</title>
+
+    <!-- Reference CSS Stylesheet -->
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+
+    <!-- Import Google Font (Inter by Rasmus Andersson) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Navigation Menu -->
+    <header>
+      <nav class="light">
+        <div class="desktop">
+          <img
+            src="resources/logos/triplebyte_logo.png"
+            alt="Triplebyte"
+            type="image/png"
+            href="#"
+          />
+        </div>
+        <div class="mobile">
+          <img src="resources/icons/MenuMobile.svg" alt="Menu" type="image/svg+xml" width=24px>
+        </div>
+        <ul class="flex-list">
+          <li class="desktop">
+            <span><a href="#">For Companies</a></span>
+          </li>
+          <li>
+            <a href="#">Log In</a>
+          </li>
+          <li>
+            <button class="link">
+              <span>Sign Up</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Top Hero Banner -->
+    <main>
+      <div class="container">
+        <div class="content light">
+          <div class="main-text">
+            <h1>Get offers from top tech companies</h1>
+            <p>
+              Triplebyte cuts through the cruft of the job application process and
+              connects the boldest and most innovative names in tech with the best
+              and brightest engineers. Think you have what it takes?
+            </p>
+            <div class="options">
+              <button class="primary">Take the quiz</button>
+              <button class="secondary">Explore open positions</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+
+    <!-- Code Track Quizzes Section -->
+    <section id="quizzes">
+      <div class="container">
+        <div class="content light">
+          <h2 class="center">Choose your track</h2>
+  
+          <!-- List of coding tracks -->
+         
+          <ul class="quiz-card">
+            <!-- Generalist Card -->
+            
+            <li>
+              
+                <div class="text title">
+                  <h3 class="bold">Generalist</h3>
+                </div>
+                <img
+                  src="resources/icons/Generalist.svg"
+                  type="image/svg+xml"
+                  alt="Command line in a hexagon"
+                  height="76px"
+                />
+              
+              <p class="text small">You're experienced with server-side web systems.</p>
+              
+                <ul class="code-tags flex-list">
+                  <li>Node.js</li>
+                  <li>Python</li>
+                  <li>Ruby</li>
+                </ul>
+              
+              <button class="link">Take the quiz »</button>
+            </li>
+  
+            <!-- Front End Card -->
+            <li>
+              
+                <div class="text title">
+                  <h3 class="bold">Front End</h3>
+                </div>
+                <img
+                  src="resources/icons/FrontEnd.svg"
+                  type="image/svg+xml"
+                  alt="User interface"
+                />
+              
+              <p class="text small">You're experienced with front-end frameworks.</p>
+             
+                <ul class="code-tags flex-list">
+                  <li>JavaScript</li>
+                  <li>jQuery</li>
+                  <li>CSS</li>
+                </ul>
+              
+              <button class="link">Take the quiz »</button>
+            </li>
+  
+            <!-- Mobile Card -->
+            <li>
+              
+                <div class="text title">
+                  <h3 class="bold">Mobile</h3>
+                </div>
+                <img
+                  src="resources/icons/Mobile.svg"
+                  type="image/svg+xml"
+                  alt="Mobile phone"
+                />
+             
+              <p class="text small">You're experienced with native iOS or Android development.</p>
+              
+                <ul class="code-tags flex-list">
+                  <li>Swift</li>
+                  <li>Java</li>
+                  <li>Kotlin</li>
+                </ul>
+             
+              <button class="link">Take the quiz »</button>
+            </li>
+  
+            <!-- Machine Learning Card -->
+            <li>
+              
+                <div class="text title">
+                  <h2 class="tag">New</h2>
+                  <h3 class="bold">Machine Learning</h3>
+                </div>
+  
+                <img
+                  src="resources/icons/ML.svg"
+                  type="image/svg+xml"
+                  alt="Neural network"
+                />
+              
+              <p class="text small">
+                You have experience building or deploying machine learning models.
+              </p>
+              
+                <ul class="code-tags flex-list">
+                  <li>Python</li>
+                  <li>R</li>
+                  <li>JavaScript</li>
+                </ul>
+              
+              <button class="link">
+                Take the quiz »
+              </button>
+            </li>
+  
+            <!-- Dev Ops Card -->
+            <li>
+              
+                <div class="text title">
+                  <h2 class="tag">New</h2>
+                  <h3 class="bold">Dev Ops</h3>
+                </div>
+                <img
+                  src="resources/icons/DevOps.svg"
+                  type="image/svg+xml"
+                  alt="Spinning gear"
+                />
+              
+              <p class="text small">
+                You have experience designing and managing reliable
+                infrastructure.
+              </p>
+              
+                <ul class="code-tags flex-list">
+                  <li>Python</li>
+                  <li>Ruby</li>
+                  <li>JavaScript</li>
+                </ul>
+         
+              <button class="link">Take the quiz »</button>
+            </li>
+  
+            <!-- Data Science Card -->
+            <li>
+              
+                <div class="text title">
+                  <h2 class="tag">New</h2>
+                  <h3 class="bold">Data Science</h3>
+                </div>
+  
+                <img
+                  src="resources/icons/Data.svg"
+                  type="image/svg+xml"
+                  alt="Chart within atomic orbit"
+                />
+              
+              <p class="text small">You have experience designing experiments, building models.</p>
+              
+                <ul class="code-tags flex-list">
+                  <li>Python</li>
+                  <li>R</li>
+                  <li>MATLAB</li>
+                </ul>
+              
+              <button class="link">Take the quiz »</button>
+            </li>
+          </ul>
+          
+      </div>
+      
+      </div>
+    </section>
+
+    <!-- Go Triplebyte Section -->
+    <section id="go-triplebyte">
+      
+      <!-- Triplebyte Process -->
+      <section id="process" class="container">
+        <div class="content dark">
+          <div class="grid2">
+            <div class="main-text">
+              <h2>Why Triplebyte?</h2>
+              <p>
+                Go through Triplebyte once, then skip ahead to final interviews
+                with top tech companies. Once you pass, you're accepted for life.
+              </p>
+            </div>
+            <ul>
+              <li>
+                <img src="./resources/icons/Step1.svg" />
+                <h3 class="medium light">Triplebyte quiz</h3>
+              </li>
+              <li>
+                <img src="./resources/icons/Step2.svg" />
+                <h3 class="medium light">Triplebyte interview</h3>
+              </li>
+              <li>
+                <img src="./resources/icons/Step3.svg" />
+                <h3 class="medium light">Onsite interview</h3>
+              </li>
+            </ul>
+            
+          </div>
+      </section>
+
+      <!-- Statistics -->
+      <section id="stats" class="container">
+        <div class="content dark center">
+          <ul class="flex-list">
+            <li>
+              <div class="text">
+                <h2>450+</h2>
+                <p>Companies actively hiring</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="text">
+                <h2>10,000+</h2>
+                <p>Candidate matches per week</p>
+              </div>
+              
+            </li>
+            <li>
+              <div class="text">
+                <h2>3,000+</h2>
+                <p>Job offers received</p>
+              </div>
+              
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </section>
+
+    <!-- Partners -->
+    <section id="partners">
+      <div class="container">
+      <div class="content dark">
+        <div class="main-text center">
+          <h2>We work with great companies</h2>
+          <p>
+            We work with hundreds of companies of different sizes, stages, and
+            industries and personally identify the ones that will be most
+            exciting to you. All allow our pre-screened, pre-matched engineers
+            to skip resume screens.
+          </p>
+        </div>
+        <ul>
+          <li>
+            <img
+              src="./resources/logos/adobe.svg"
+              alt="Adobe"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/robinhood.svg"
+              alt="Robinhood"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/box.svg"
+              alt="Box"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/color.svg"
+              alt="Color"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/coursera.svg"
+              alt="Coursera"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/dropbox.svg"
+              alt="Dropbox"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/evernote.svg"
+              alt="Evernote"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/flexport.svg"
+              alt="Flexport"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/upstart.svg"
+              alt="Upstart"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/hipmunk.svg"
+              alt="Hipmunk"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/houseparty.svg"
+              alt="Houseparty"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/instacart.svg"
+              alt="Instacart"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/lever.svg"
+              alt="Lever"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/mixpanel.svg"
+              alt="Mixpanel"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/uber.svg"
+              alt="Uber"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/opendoor.svg"
+              alt="Opendoor"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/quip.svg"
+              alt="Quip"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/quora.svg"
+              alt="Quora"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/reddit.svg"
+              alt="Reddit"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/rubrik.svg"
+              alt="Rubrik"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/truecar.svg"
+              alt="Truecar"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/twitch.svg"
+              alt="Twitch"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/wish.svg"
+              alt="Wish"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/zoox.svg"
+              alt="Zoox"
+              type="image/svg+xml"
+            />
+          </li>
+          <li>
+            <img
+              src="./resources/logos/asana.svg"
+              alt="Asana"
+              type="image/svg+xml"
+            />
+          </li>
+        </ul>
+        <div class="main-text center">
+          <p>
+            Want to join these companies in hiring exceptional engineers on
+            Triplebyte?
+          </p>
+          <button class="secondaryDark center">Start hiring</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Salary Information -->
+    <section id="salary">
+      <div class="container">
+      <div class="content light">
+        <div class="main-text">
+          <h2>Interested in learning about software salaries?</h2>
+          <p>
+            Get a direct line of sight into real software engineering offers
+            made via Triplebyte using our Salary Tool!
+          </p>
+          <button class="secondary">Take a look</button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Featured Opportunities -->
+    <section id="jobs">
+      <div class="container">
+      <div class="content dark">
+        <h2 class="center">Featured Opportunities</h2>
+
+        <ul>
+          <li>
+            <div class="image-crop">
+              <img src="resources/logos/rubrik.png" />
+            </div>
+            <div class="text">
+              <h4 class="bold overflow-ellipsis">
+                Member of Technical Staff, Front End
+              </h4>
+              <p class="small overflow-ellipsis">Rubrik</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="image-crop">
+              <img src="resources/logos/eero.jpg" />
+            </div>
+            <div class="text">
+              <h4 class="bold overflow-ellipsis">
+                Device Software - Systems Engineer
+              </h4>
+              <p class="small overflow-ellipsis">eero</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="image-crop">
+              <img src="resources/logos/snap-inc.png" />
+            </div>
+            <div class="text">
+              <h4 class="bold overflow-ellipsis">
+                Software Engineer, Full Stack
+              </h4>
+              <p class="small overflow-ellipsis">Snap Inc</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="image-crop">
+              <img src="resources/logos/apple.png" />
+            </div>
+            <div class="text">
+              <h4 class="bold overflow-ellipsis">
+                Siri Software Engineer, Music
+              </h4>
+              <p class="small overflow-ellipsis">Apple</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="image-crop">
+              <img src="resources/logos/ripple.png" />
+            </div>
+            <div class="text">
+              <h4 class="bold overflow-ellipsis">
+                ODL Engineer
+              </h4>
+              <p class="small overflow-ellipsis">Ripple</p>
+            </div>
+          </li>
+
+          <li>
+            <div class="image-crop">
+              <img src="resources/logos/flexport.png" />
+            </div>
+            <div class="text">
+              <h4 class="bold overflow-ellipsis">
+                Generalist Engineer
+              </h4>
+              <p class="small overflow-ellipsis">Flexport</p>
+            </div>
+          </li>
+        </ul>
+
+        <button class="secondaryDark center">See more</button>
+      </div>
+    </div>
+    </section>
+
+    <!-- Top Questions -->
+    <section id="questions">
+      <div class="container">
+      <div class="content light">
+        <h2 class="center">Top Questions</h2>
+
+        <!-- Featured Questions -->
+        <ul class="flex-list">
+          <!-- Question 1 -->
+          <li>
+            <h3 class="medium">When should I sign up?</h3>
+            <p>
+              Take our quiz anytime, even just for fun! After the quiz, find a
+              time to talk with us within 3-4 months before you can start a new
+              full-time position. If you’re free sooner, that’s great too.
+            </p>
+          </li>
+
+          <!-- Question 2 -->
+          <li>
+            <h3 class="medium">How much does it cost?</h3>
+            <p>
+              Free for engineers. We’ll even cover your flights and hotels for
+              final interviews. Companies pay us because we make their hiring
+              process more efficient.
+            </p>
+          </li>
+
+          <!-- Question 3 -->
+          <li>
+            <h3 class="medium">Is it confidential?</h3>
+            <p>
+              Yes. We will not share any information about you with companies
+              until you’re ready. We will also ask you for companies to block in
+              case your current or past employers are on our platform.
+            </p>
+          </li>
+        </ul>
+
+        <button class="secondary center">See our FAQ</button>
+      </div>
+    </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div class="container">
+      <div class="content light">
+        <div class="testimonial-title">
+          <h2>Engineers</h2>
+          <h2>♥</h2>
+          <h2>Triplebyte</h2>
+        </div>
+
+        <!-- Featured Testimonials -->
+        <ul>
+          <!-- Stripe Hire Testimonial -->
+          <li>
+            <div class="image-container">
+              <div class="image-crop">
+                <img
+                  src="resources/images/testimonial-peter.jpg"
+                  type="image/jpeg"
+                  alt="Software engineer at Stripe"
+                />
+              </div>
+            </div>
+
+            <p>
+              Triplebyte really opened doors for me. I lived three thousand
+              miles from Silicon Valley, and had no contacts in the area.
+              Triplebyte got me in touch with all kinds of companies. I ended up
+              with a great offer from Stripe, and the job has been great.
+            </p>
+            <p class="attribution">
+              Peter Lefferts, Software Engineer hired by Stripe
+            </p>
+          </li>
+
+          <!-- Flexport Hire Testimonial -->
+          <li>
+            <div class="image-container">
+              <div class="image-crop">
+                <img
+                  src="resources/images/testimonial-aubrey.jpg"
+                  type="image/jpeg"
+                  alt="Software engineer at Flexport"
+                />
+              </div>
+            </div>
+
+            <p>
+              Before using Triplebyte, nobody responded to me because I was a CS
+              grad in Australia. Using Triplebyte, I interviewed at 5 companies
+              and got 5 offers. I accepted a job at Flexport, because they’re
+              exciting and growing really quickly.
+            </p>
+            <p class="attribution">
+              Aubrey Worthington, Software Engineer hired by Flexport
+            </p>
+          </li>
+
+          <!-- Apple Hire Testimonial -->
+          <li>
+            <div class="image-container">
+              <div class="image-crop">
+                <img
+                  src="resources/images/testimonial-alejandro.jpg"
+                  type="image/jpeg"
+                  alt="Software engineer at Apple"
+                />
+              </div>
+            </div>
+
+            <p>
+              My experiences with Triplebyte were nothing short of fantastic.
+              Triplebyte matched my passion with excellent candidate companies
+              and provided me with immense exposure to a thriving industry in
+              the heart of Silicon Valley.
+            </p>
+            <p class="attribution">
+              Alejandro Lucena, Software Engineer hired by Apple
+            </p>
+          </li>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Get Started Banner -->
+    <section id="cta">
+      <div class="container">
+        <div class="content light">
+          <div class="main-text">
+            <h2>Ready to accelerate your career?</h2>
+            <p>You get 3 attempts to pass - give it a try and see how you do!</p>
+            <button class="primary">Take the quiz</button>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Not Looking Banner -->
+    <section id="register">
+      <div class="container">
+      <div class="content light">
+        <div class="main-text center">
+          <h2>Not actively looking?</h2>
+          <p>
+            Let the right role come to you. Answer a few questions and we'll
+            curate roles that we think would be a good fit for you. Whenever
+            you're ready, apply!
+          </p>
+          <button class="secondary center">Get started</button>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers">
+      <div class="container">
+        <div class="content light">
+          <div class="main-text">
+            <h2>Be part of the future of hiring</h2>
+            <button class="secondary">Join Triplebyte</button>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="content light">
+        <!-- Company links -->
+        <div class="link-list">
+          Company
+          <ul>
+            <li>About</li>
+            <li>Manifesto</li>
+            <li>Open Source</li>
+            <li>Contact</li>
+            <li>Careers</li>
+            <li>Press</li>
+          </ul>
+        </div>
+
+        <!-- Software Engineering Links -->
+        <div class="link-list">
+          Software Engineering
+          <ul>
+            <li>Salaries</li>
+            <li>Jobs</li>
+            <li>Diversity</li>
+            <li>FAQ</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+
+        <!-- Terms and Policies -->
+        <div class="link-list">
+          Terms and Policies
+          <ul>
+            <li>Privacy Center</li>
+            <li>Privacy Policy</li>
+            <li>Terms and Conditions</li>
+          </ul>
+          <div class="social">
+            <img
+              src="resources/icons/facebook-white.svg"
+              alt="Facebook logo"
+              type="image/svg+xml"
+              height="24px"
+            />
+            <img
+              src="resources/icons/twitter-white.svg"
+              alt="Twitter logo"
+              type="image/svg+xml"
+              height="24px"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Disclaimer -->
+    <section id="disclaimer">
+      <div class="container">
+        <div class="content">
+          <p class="small light attribution">Hand-crafted with ♥ by Jon MacCaull. This site is not affiliated with Triplebyte in any way and makes no claims of ownership over the content herein, it is intended purely as a design and coding exercise for educational and experimentation purposes. Icons and text from <a href="https://triplebyte.com/">triplebyte.com</a>. Photos from Unsplash, attributions in order of appearance: <a href="https://unsplash.com/photos/gnyA8vd3Otc">Shahadat Rahman</a>, <a href="https://unsplash.com/photos/vMV6r4VRhJ8">Marius Ciocirlan</a>, <a href="https://unsplash.com/photos/kXfBDl0fR1E">Christina @ wocintechchat.com</a>, <a href="https://unsplash.com/photos/KIPqvvTOC1s">Jonas Kakaroto</a>, <a href="https://unsplash.com/photos/CZ9AjMGKIFI">Nicole Wolf</a>, <a href="https://unsplash.com/photos/7JX0-bfiuxQ">JJ Ying</a>. Site font <a href="https://fonts.google.com/specimen/Inter?query=inter">Inter</a> by Rasmus Andersson.</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

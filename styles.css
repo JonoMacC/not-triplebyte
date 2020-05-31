@@ -1,0 +1,791 @@
+/* Font & Basic Styles */
+* {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  background-color: none;
+}
+
+html {
+  font-size: 16px;
+  line-height: 150%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* li {
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Universal Styles */
+h1 {
+  font-size: 4rem;
+  line-height: 112.5%;
+  font-weight: 700;
+  max-width: 448px;
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 125%;
+  font-weight: 700;
+  margin-bottom: 2.875rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 133%;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.tag {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.dark {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.light {
+  color: white;
+}
+
+.light a {
+  color: white;
+}
+
+.attribution {
+  opacity: 50%;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.overflow-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.flex-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+/* Reusable Container Styles */
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 15.625rem);
+  gap: 1.25rem 1rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+}
+
+.content {
+  grid-column: 2 / span 10;
+  align-items: center;
+  z-index: 2;
+  padding: 7.5rem 0;
+}
+
+.main-text p {
+  margin-bottom: 2.6875rem;
+}
+
+/* Section Container Styles */
+#testimonials,
+#register {
+  background-color: #111d27;
+}
+
+#disclaimer {
+  background-color: black;
+}
+
+/* Button Styles */
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 3.125rem;
+  width: 15.625rem;
+  border: none;
+  background: none;
+  color: white;
+  transition: all ease-in-out 0.2s;
+}
+
+button.primary {
+  background-color: #0066ff;
+}
+
+button.primary:hover,
+button.link:hover {
+  background-color: #02d1ff;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+button.secondary {
+  border: 1px solid white;
+}
+
+button.secondary:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+button.secondaryDark {
+  color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+button.secondaryDark:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+button.link {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  height: 2rem;
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+/* Navbar */
+header {
+  background-color: #111d27;
+  grid-column: 1 / span 12;
+}
+
+nav {
+  margin: 0 1rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  align-items: stretch;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+  height: 2rem;
+  margin-left: 1.1875rem;
+}
+
+nav ul li span {
+  padding: 0 2.8125rem 0 0;
+}
+
+nav ul li button span {
+  padding: 0 1.1875rem;
+}
+
+nav img {
+  height: 1.75rem;
+}
+
+.mobile {
+  display: none;
+}
+
+/* Hero Section */
+main {
+  background: url("./resources/images/hero_background.svg");
+  background-size: 728px;
+  background-repeat: no-repeat;
+  background-position: top 23px right 40px;
+  background-color: #111d27;
+}
+
+main h2,
+main p {
+  max-width: 448px;
+}
+
+/* Choose Triplebyte Section */
+#go-triplebyte {
+  background: url("./resources/images/chevron_bg_2.svg");
+  background-size: auto 1192px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+/* Quiz Section */
+#quizzes {
+  background: url("./resources/images/chevron_bg_1.svg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-color: #213e56;
+}
+
+ul.quiz-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(248px, 294px));
+  gap: 6rem 1.5rem;
+  justify-content: center;
+  justify-items: center;
+  margin: 6rem auto;
+  max-width: 1010px;
+}
+
+ul.quiz-card > li {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 23.5rem;
+  padding: 1.5rem;
+  background-color: #0066ff;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+ul.quiz-card > li .title {
+  align-items: center;
+}
+
+ul.quiz-card > li img {
+  height: 4.75rem;
+}
+
+ul.quiz-card > li h3 {
+  font-size: 1.25rem;
+}
+
+ul.quiz-card > li:hover,
+ul.quiz-card > li:focus,
+#questions ul li:hover,
+#questions ul li:focus {
+  box-shadow: -0.5rem 0.5rem 0 #02d1ff;
+  top: -0.5rem;
+  left: 0.5rem;
+}
+
+ul.code-tags {
+  align-items: stretch;
+}
+
+ul.code-tags > li {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.5rem;
+  height: 1.5rem;
+  border: 1px solid white;
+  font-size: 0.6875rem;
+}
+
+/* Process Section */
+.grid2 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+#process .main-text {
+  max-width: 380px;
+}
+
+#process ul {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 4.5rem;
+  margin-left: auto;
+}
+
+#process ul li {
+  background-color: #213e56;
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 384px;
+  padding: 0.75rem 1rem;
+}
+
+#process ul li img {
+  margin-right: 1rem;
+}
+
+/* Stats Section */
+#stats .content {
+  margin: 0;
+  padding: 0;
+}
+
+#stats ul li {
+  height: 22.75rem;
+  width: 16rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: url("./resources/icons/StackStat.svg");
+  background-size: 16rem;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+#stats ul li:nth-child(2) {
+  margin-top: 6.75rem;
+}
+
+#stats ul li .text {
+  height: 9rem;
+  width: 9rem;
+  margin-top: 4.5rem;
+}
+
+#stats ul li h2 {
+  margin-bottom: 1rem;
+}
+
+/* Partners Section */
+#partners {
+  background-color: white;
+}
+
+#partners .main-text {
+  max-width: 677px;
+}
+
+#partners ul {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 140px);
+  gap: 2.75rem 2rem;
+  margin: 8rem auto;
+  max-width: 828px;
+}
+
+#partners ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Salary Section */
+#salary {
+  background-color: #111d27;
+  background: linear-gradient(rgba(17, 29, 39, 0.5), rgba(17, 29, 39, 0.5)),
+    linear-gradient(to left, rgba(17, 29, 39, 0), #111d27 60%),
+    url("./resources/images/computer-code-background.jpg");
+  background-size: auto 150%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#salary .main-text {
+  max-width: 448px;
+}
+
+/* Jobs Section */
+#jobs {
+  background-color: #f3f6f9;
+}
+
+#jobs ul {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 352px));
+  gap: 1.5rem 1rem;
+  margin: 3.375rem auto;
+  max-width: 1088px;
+}
+
+#jobs ul li {
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#jobs .text {
+  width: 213px;
+  vertical-align: middle;
+  margin-top: 1rem;
+}
+
+#jobs .image-crop {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+/* Questions Section */
+#questions {
+  background-color: #213e56;
+}
+
+#questions ul {
+  align-items: stretch;
+  margin: 5.5rem 0;
+}
+
+#questions ul li {
+  max-width: 363px;
+  background-color: #0066ff;
+  padding: 1.5rem;
+  margin: 1.6875rem auto;
+  transition: all ease-in-out 0.3s;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#questions ul li h3 {
+  margin-bottom: 2.75rem;
+}
+
+/* Testimonials Section */
+#testimonials .content {
+  padding: 7.5rem 0 13.75rem 0;
+}
+
+#testimonials h2 {
+  text-align: center;
+}
+
+/* 
+Title is broken up into three sections in a flexbox
+so that text-wrapping can be controlled
+*/
+.testimonial-title {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.testimonial-title h2 {
+  margin: 0;
+}
+
+.testimonial-title h2:nth-child(2) {
+  margin: 0 2rem;
+}
+
+#testimonials ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#testimonials ul li {
+  min-width: 256px;
+  max-width: 332px;
+  margin: 3.125rem auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+}
+
+#testimonials .image-container {
+  margin: 0 1rem;
+}
+
+#testimonials ul li p {
+  margin: 1.5rem 0;
+}
+
+#testimonials .image-crop {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  min-width: 224px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+}
+
+/* CTA Section */
+#cta {
+  background-color: #344759;
+  background: linear-gradient(rgba(17, 29, 39, 0.5), rgba(17, 29, 39, 0.5)),
+    linear-gradient(to left, rgba(52, 71, 89, 0), #344759 90%),
+    url("./resources/images/coder-at-work.jpg");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#cta .content {
+  padding: 10rem 0;
+}
+
+#cta .main-text {
+  max-width: 360px;
+}
+
+#cta .container {
+  grid-template-rows: 1fr;
+}
+
+/* Register Section */
+#register .main-text {
+  max-width: 425px;
+}
+
+/* Careers Section */
+#careers {
+  background-image: url("./resources/images/triple-lattice-network.jpg");
+  background-size: cover;
+}
+
+#careers .content {
+  padding: 9.375rem 0;
+}
+
+#careers .main-text {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#careers h2 {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  flex: 0 auto;
+}
+
+#careers button {
+  margin: 0 auto;
+  flex: 0 auto;
+}
+
+/* Footer Section */
+footer {
+  display: block;
+  background-color: #233240;
+}
+
+footer .content {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 3.875rem 0 7.375rem 0;
+  margin: 0 auto;
+  width: 752px;
+}
+
+footer ul {
+  margin-top: 1.5rem;
+}
+
+footer ul li {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  margin: 0.25rem 0;
+}
+
+footer .social {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+  margin-top: 3rem;
+}
+
+footer .social img {
+  margin-right: 1.5rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 1600px) {
+  .content {
+    grid-column: 3 / span 8;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #questions ul {
+    flex-flow: column;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  main {
+    background: linear-gradient(rgba(17, 29, 39, 0.5), rgba(17, 29, 39, 0.5)),
+      url("./resources/images/hero_background.svg");
+    background-size: 728px;
+    background-repeat: no-repeat;
+    background-position: top 23px right -128px;
+    background-color: #111d27;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .quiz-card > ul > li {
+    width: 231px;
+  }
+
+  .quiz-card > ul > li .text {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .quiz-card > ul > li p {
+    height: 5.1875rem;
+    vertical-align: text-top;
+  }
+
+  .quiz-card > ul > li .title {
+    height: 2.6875rem;
+    vertical-align: middle;
+  }
+
+  .quiz-card > ul > li img {
+    height: 4rem;
+  }
+
+  .grid2 {
+    flex-flow: column;
+  }
+
+  #process .main-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #process ul {
+    margin: 0 auto;
+  }
+
+  #stats ul {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #stats ul li:nth-child(3) {
+    margin-top: 6.75rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 16px;
+  }
+
+  .content {
+    grid-column: 1 / span 4;
+  }
+
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .testimonial-title {
+    flex-flow: column;
+  }
+
+  #cta .main-text h2,
+  #cta .main-text p {
+    text-align: center;
+  }
+
+  #cta .main-text button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  #jobs .text {
+    text-align: center;
+  }
+}
